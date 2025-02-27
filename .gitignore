@@ -1,0 +1,23 @@
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# Node.js dependencies (если используешь npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+dist/
+build/
+
+# Log files
+npm-debug.log
+yarn-error.log
+
+# Ignore all hidden system files
+.*~
