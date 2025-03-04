@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JXWZ0TF13"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-3JXWZ0TF13');
   </script>
 
@@ -17,83 +16,165 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Fixed Navbar -->
+
 <nav class="navbar">
   <div class="container">
     <a href="#" class="logo">BreatheBetter</a>
     <ul class="nav-links">
       <li><a href="#techniques">Techniques</a></li>
-      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#improve-breathing">Benefits</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <a href="#" class="btn">Start for Free</a>
+    <div class="mobile-menu-icon">
+      <img src="img/three-arrows.svg" alt="Menu">
+    </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
 <header class="hero">
-  <h1>Master Your Breathing:<br> Easy Methods to Reduce Stress, Improve Sleep & Boost Focus</h1>
-  <p>Controlled breathing helps manage stress, sharpen focus, and promote restful sleep.</p>
+  <div class="hero-content">
+    <h1>Master Your Breathing: Easy Methods to Reduce Stress, Improve Sleep & Boost Focus</h1>
+    <p>Controlled breathing helps manage stress, sharpen focus, and promote restful sleep. Explore proven techniques to calm your mind, ease anxiety, and improve lung health.</p>
+  </div>
 </header>
 
-<!-- Techniques Section -->
-<section id="techniques" class="section">
+<section id="techniques" class="techniques-section">
   <h2>Top Breathwork Techniques for a Calm Mind</h2>
-  <div class="techniques-container">
-    <div class="technique-card">4-7-8 Breathing</div>
-    <div class="technique-card">Box Breathing</div>
-    <div class="technique-card">Diaphragmatic Breathing</div>
-  </div>
-</section>
-
-<!-- Benefits Section -->
-<section id="benefits" class="section">
-  <h2>Why Proper Breathing Improves Your Health</h2>
-  <div class="benefits-container">
-    <div class="benefit">Reduces Stress & Anxiety</div>
-    <div class="benefit">Enhances Sleep Quality</div>
-    <div class="benefit">Boosts Mental Focus</div>
-  </div>
-</section>
-
-<!-- Blog Section with Slider -->
-<section id="blog" class="section">
-  <h2>Explore Our Blog</h2>
-  <div class="blog-slider">
-    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-    <div class="blog-container">
-      <div class="blog-card">Blog 1</div>
-      <div class="blog-card">Blog 2</div>
-      <div class="blog-card">Blog 3</div>
-      <div class="blog-card">Blog 4</div>
+  <div class="techniques-wrapper">
+    <div class="techniques-container">
+      <div class="technique">
+        <img src="img/breathwork-1.png" alt="4-7-8 Breathing">
+        <p><strong>4-7-8 Breathing:</strong> A Quick Way to Relax</p>
+      </div>
+      <div class="technique">
+        <img src="img/breathwork-2.png" alt="Box Breathing">
+        <p><strong>Box Breathing:</strong> For Focus and Clarity</p>
+      </div>
+      <div class="technique">
+        <img src="img/breathwork-3.png" alt="Diaphragmatic Breathing">
+        <p><strong>Diaphragmatic Breathing:</strong> For Better Oxygen Flow</p>
+      </div>
     </div>
-    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+    <div class="tech-arrows">
+      <button class="tech-arrow left-arrow">
+        <img src="img/arrow-left.svg" alt="Left Arrow">
+      </button>
+      <button class="tech-arrow right-arrow">
+        <img src="img/arrow-right.svg" alt="Right Arrow">
+      </button>
+    </div>
   </div>
 </section>
 
-<!-- FAQ Section -->
-<section id="faq" class="section">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq-item">
-    <button class="faq-question">What are the benefits of breathwork?</button>
-    <div class="faq-answer">Breathwork helps reduce stress, improve sleep, and enhance focus.</div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-question">How often should I practice breathing exercises?</button>
-    <div class="faq-answer">Ideally, daily for at least 5-10 minutes.</div>
-  </div>
-  <div class="faq-item">
-    <button class="faq-question">Can deep breathing help with anxiety?</button>
-    <div class="faq-answer">Yes, deep breathing activates relaxation responses in the body.</div>
+<section id="improve-breathing" class="improve-section">
+  <h2>Improve Your Breathing with These Techniques</h2>
+  <div class="improve-container">
+    <div class="improve-item">
+      <img src="img/improve-1.png" alt="Breathing Relaxation">
+      <h3>Breathing Relaxation</h3>
+      <p>Learn how to use deep breathing to release tension and find inner peace.</p>
+    </div>
+    <div class="improve-item">
+      <img src="img/improve-2.png" alt="Energy Boosting">
+      <h3>Energy Boosting</h3>
+      <p>Use specific breathing techniques to boost energy and mental clarity.</p>
+    </div>
+    <div class="improve-item">
+      <img src="img/improve-3.png" alt="Breath Awareness">
+      <h3>Breath Awareness</h3>
+      <p>Enhance mindfulness and concentration by focusing on your breath.</p>
+    </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <h2>Contact Us</h2>
-  <p>Email: support@breathebetter.com | Phone: +1 (234) 567-8900</p>
-</footer>
+<section id="blog" class="blog-section">
+  <h2>Explore Our Blog</h2>
+  <div class="blog-wrapper">
+    <div class="blog-container">
+      <div class="blog-item">
+        <img src="img/blog-1.png" alt="Workplace Wellness">
+        <p><strong>Workplace Wellness:</strong> Do workplace wellness programs work? Here’s what to know</p>
+      </div>
+      <div class="blog-item">
+        <img src="img/blog-2.png" alt="Mental Health & Relationships">
+        <p><strong>Mental Health, Relationships:</strong> How to support the mental health of the men in your life</p>
+      </div>
+      <div class="blog-item">
+        <img src="img/blog-3.png" alt="Breathing & Relaxation">
+        <p><strong>Breathing & Relaxation:</strong> How deep breathing can help reduce daily stress</p>
+      </div>
+      <div class="blog-item">
+        <img src="img/blog-4.png" alt="Mindfulness & Focus">
+        <p><strong>Mindfulness & Focus:</strong> Simple breathwork techniques to improve concentration</p>
+      </div>
+    </div>
+    <div class="blog-arrows">
+      <button class="blog-arrow left-arrow">
+        <img src="img/arrow-left.svg" alt="Left Arrow">
+      </button>
+      <button class="blog-arrow right-arrow">
+        <img src="img/arrow-right.svg" alt="Right Arrow">
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question">
+        What are the key health benefits of breathwork?
+        <img src="img/arrow-down.svg" alt="Expand" class="faq-icon">
+      </button>
+      <div class="faq-answer">Breathwork improves focus, reduces stress, and enhances overall well-being.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">
+        How often should I practice breathing exercises?
+        <img src="img/arrow-down.svg" alt="Expand" class="faq-icon">
+      </button>
+      <div class="faq-answer">It's recommended to practice at least 5-10 minutes daily for best results.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">
+        Can deep breathing help with anxiety?
+        <img src="img/arrow-down.svg" alt="Expand" class="faq-icon">
+      </button>
+      <div class="faq-answer">Yes! Deep breathing activates the parasympathetic nervous system, reducing anxiety.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p>Got questions or feedback? We'd love to hear from you!</p>
+      <h3>Contacts:</h3>
+      <ul>
+        <li>Email: <a href="mailto:support@breathebetter.com">support@breathebetter.com</a></li>
+        <li>Phone: <a href="tel:+12345678900">+1 (234) 567-8900</a></li>
+        <li>Address: <a href="https://maps.app.goo.gl/ChfvCkzpwCiaKM927" target="_blank">Sonnenallee 221, 12059 Berlin</a></li>
+      </ul>
+      <h3>Our Mission:</h3>
+      <p class="mission-text">
+        <em>
+          "We are dedicated to helping you achieve peace of mind and body through personalized breathing techniques.
+          With just a few minutes a day, you can reduce stress, boost focus, and improve sleep."
+        </em>
+      </p>
+    </div>
+    <div class="contact-logo">
+      <img src="img/logo.png" alt="Breathe Better Logo">
+    </div>
+  </div>
+  <p class="copyright">© 2025 BreatheBetter. All Rights Reserved.</p>
+</section>
 
 <script src="js/app.js"></script>
 </body>
