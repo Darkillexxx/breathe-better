@@ -213,6 +213,25 @@ section {
     justify-content: center;
 }
 
+.download-app-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.download-app-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.download-app-icons {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.download-app-icons img {
+    width: 150px;
+}
+
 .blog-section {
     text-align: center;
     padding: 50px 20px;
@@ -304,7 +323,6 @@ section {
         gap: 15px;
     }
 }
-
 
 .faq-section {
     width: 100%;
@@ -425,13 +443,6 @@ section {
     height: auto;
 }
 
-.copyright {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 30px;
-    opacity: 0.8;
-}
-
 .mobile-menu-icon {
     display: none;
 }
@@ -501,11 +512,13 @@ section {
         padding-left: 200px;
         box-sizing: border-box;
     }
+
     .technique {
         scroll-snap-align: start;
         flex: 0 0 auto;
         width: 90%;
     }
+
     .tech-arrows {
         position: absolute;
         right: 5%;
@@ -513,6 +526,7 @@ section {
         display: flex;
         gap: 15px;
     }
+
     .tech-arrow {
         width: 40px;
         height: 40px;
@@ -525,11 +539,25 @@ section {
         cursor: pointer;
         transition: 0.3s;
     }
+
     .tech-arrow:hover {
         background: #f0f0f0;
     }
+
     .tech-arrow img {
         width: 20px;
         height: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info,
+    .contact-logo {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 }
