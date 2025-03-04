@@ -28,19 +28,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    if (window.innerWidth <= 768) {
-        const techniquesContainer = document.querySelector(".techniques-container");
-        const techLeftArrow = document.querySelector(".tech-arrow.left-arrow");
-        const techRightArrow = document.querySelector(".tech-arrow.right-arrow");
-        if (techniquesContainer && techLeftArrow && techRightArrow) {
-            techLeftArrow.addEventListener("click", function () {
-                techniquesContainer.scrollBy({ left: -300, behavior: "smooth" });
-            });
-            techRightArrow.addEventListener("click", function () {
-                techniquesContainer.scrollBy({ left: 300, behavior: "smooth" });
-            });
-        }
+    const techniquesContainer = document.querySelector(".techniques-container");
+    const techLeftArrow = document.querySelector(".tech-arrow.left-arrow");
+    const techRightArrow = document.querySelector(".tech-arrow.right-arrow");
+    if (techniquesContainer && techLeftArrow && techRightArrow) {
+        techLeftArrow.addEventListener("click", function () {
+            techniquesContainer.scrollBy({ left: -300, behavior: "smooth" });
+        });
+        techRightArrow.addEventListener("click", function () {
+            techniquesContainer.scrollBy({ left: 300, behavior: "smooth" });
+        });
     }
+
 
     const faqItems = document.querySelectorAll(".faq-item");
     faqItems.forEach(item => {
