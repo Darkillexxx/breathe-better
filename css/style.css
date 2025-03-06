@@ -595,3 +595,11 @@ section {
 #tryFreeBtn {
     margin-top: 20px;
 }
+
+.cta-message {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    margin-top: 25px;
+}
+
