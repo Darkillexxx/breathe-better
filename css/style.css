@@ -379,6 +379,10 @@ section {
     padding-top: 10px;
 }
 
+.faq-item.active .faq-question img {
+    transform: rotate(180deg);
+}
+
 .contact-section {
     background-color: #0D0B33;
     color: white;
