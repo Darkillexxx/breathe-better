@@ -70,6 +70,7 @@ section {
     color: black;
     border-radius: 20px;
     text-decoration: none;
+    transition: background-color 0.2s;
 }
 
 .btn:hover {
@@ -139,6 +140,7 @@ section {
     align-items: center;
     text-align: center;
     max-width: 250px;
+    cursor: pointer;
 }
 
 .technique img {
@@ -213,23 +215,18 @@ section {
     justify-content: center;
 }
 
-.download-app-section {
-    text-align: center;
-    padding: 40px 20px;
-}
+@media (max-width: 768px) {
+    .improve-section {
+        padding: 20px;
+    }
 
-.download-app-wrapper h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+    .improve-container {
+        gap: 20px;
+    }
 
-.download-app-icons {
-    display: inline-flex;
-    gap: 20px;
-}
-
-.download-app-icons img {
-    width: 150px;
+    .improve-item {
+        min-height: auto;
+    }
 }
 
 .blog-section {
@@ -310,20 +307,26 @@ section {
     height: 20px;
 }
 
-@media (max-width: 768px) {
-    .blog-item {
-        min-width: 80%;
-        max-width: none;
-    }
-    .blog-arrows {
-        position: absolute;
-        right: 5%;
-        bottom: -60px;
-        display: flex;
-        gap: 15px;
-    }
+.download-app-section {
+    text-align: center;
+    padding: 40px 20px;
 }
 
+.download-app-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.download-app-icons {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.download-app-icons img {
+    width: 150px;
+}
+
+/* Секция FAQ */
 .faq-section {
     width: 100%;
     padding: 50px 5%;
@@ -362,12 +365,6 @@ section {
     color: #000;
 }
 
-.faq-icon {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
 .faq-answer {
     max-height: 0;
     overflow: hidden;
@@ -382,15 +379,17 @@ section {
     padding-top: 10px;
 }
 
-.faq-item.active .faq-icon {
-    transform: rotate(180deg);
-}
-
 .contact-section {
     background-color: #0D0B33;
     color: white;
     padding: 50px 10%;
     text-align: left;
+}
+
+.contact-section .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .contact-container {
@@ -451,7 +450,6 @@ section {
     .nav-links {
         display: none;
     }
-
     .mobile-menu-icon {
         width: 40px;
         height: 40px;
@@ -459,18 +457,15 @@ section {
         align-items: center;
         justify-content: center;
     }
-
     .mobile-menu-icon img {
         width: 24px;
         height: auto;
         max-width: 100%;
     }
-
     .logo {
         order: 2;
         margin: 0 auto;
     }
-
     .btn {
         order: 3;
         padding: 6px 12px;
@@ -479,7 +474,6 @@ section {
         border-radius: 15px;
         width: auto;
     }
-
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -491,16 +485,13 @@ section {
         padding: 20px;
         z-index: 1100;
     }
-
     .nav-links.active li {
         margin: 15px 0;
     }
-
     .nav-links.active a {
         color: white;
         font-size: 16px;
     }
-
     .techniques-container {
         display: flex;
         flex-wrap: nowrap;
@@ -512,13 +503,11 @@ section {
         padding-left: 200px;
         box-sizing: border-box;
     }
-
     .technique {
         scroll-snap-align: start;
         flex: 0 0 auto;
         width: 90%;
     }
-
     .tech-arrows {
         position: absolute;
         right: 5%;
@@ -526,7 +515,6 @@ section {
         display: flex;
         gap: 15px;
     }
-
     .tech-arrow {
         width: 40px;
         height: 40px;
@@ -539,25 +527,71 @@ section {
         cursor: pointer;
         transition: 0.3s;
     }
-
     .tech-arrow:hover {
         background: #f0f0f0;
     }
-
     .tech-arrow img {
         width: 20px;
         height: 20px;
     }
-
+    .blog-item {
+        min-width: 80%;
+        max-width: none;
+    }
+    .blog-arrows {
+        position: absolute;
+        right: 5%;
+        bottom: -60px;
+        display: flex;
+        gap: 15px;
+    }
     .contact-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .contact-info,
     .contact-logo {
         max-width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tryFreeBtn {
+    margin-top: 20px;
 }

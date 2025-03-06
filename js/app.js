@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenuIcon.addEventListener("click", function () {
             navLinks.classList.toggle("active");
         });
-
         const navLinkItems = document.querySelectorAll(".nav-links a");
         navLinkItems.forEach(link => {
-            link.addEventListener("click", function() {
+            link.addEventListener("click", function () {
                 if (navLinks.classList.contains("active")) {
                     navLinks.classList.remove("active");
                 }
@@ -40,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
     const faqItems = document.querySelectorAll(".faq-item");
     faqItems.forEach(item => {
         const question = item.querySelector(".faq-question");
@@ -52,5 +50,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
+    });
+
+    const modal = document.getElementById("techniqueModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const closeButton = document.querySelector(".close-button");
+    const tryFreeBtn = document.getElementById("tryFreeBtn");
+
+    const techniques = document.querySelectorAll(".technique");
+    techniques.forEach(technique => {
+        technique.addEventListener("click", function () {
+            const title = this.getAttribute("data-title");
+            const description = this.getAttribute("data-description");
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modal.style.display = "flex";
+        });
+    });
+
+    closeButton.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    tryFreeBtn.addEventListener("click", function () {
+        window.location.href = "#";
     });
 });
